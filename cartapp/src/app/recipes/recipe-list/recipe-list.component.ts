@@ -10,8 +10,8 @@ export class RecipeListComponent implements OnInit {
   @Output() recipeWasSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
     new Recipe('Recipe 1', 'This is simply a test','https://c1.staticflickr.com/9/8346/8258253775_d8fa9aa697_b.jpg'),
-    new Recipe('Recipe 2', 'This is simply a test','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_sRXmjAX8jmBH8daGPssaylbN2uNixTcWfSzbX7KHP_iKbfOFg'),
-    new Recipe('Recipe 3', 'This is simply a test','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxrrfBmVYr6eyEN5W0XwYAJkOeLw7P-yrlrP-SCVHmRROeFVRpAQ')
+    new Recipe('Recipe 2', 'This is simply a test','http://maxpixel.freegreatpicture.com/static/photo/1x/Sweets-Sweet-Indian-Food-Rasgula-Dessert-577230.jpg'),
+    new Recipe('Recipe 3', 'This is simply a test','https://cdn.pixabay.com/photo/2017/11/11/10/14/pasta-2938726_960_720.jpg')
   ];
 
   constructor() { }
