@@ -1,5 +1,8 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-
+// This is a test comment
+/**
+ * Another test comment
+ */
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
