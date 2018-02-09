@@ -1,7 +1,8 @@
 import { Recipe } from "./recipe.model";
+import { EventEmitter } from "@angular/core";
 
 export class RecipeService {
-
+    recipeSelected = new EventEmitter<Recipe>();
    private recipes: Recipe[] = [ // These images are from internet with redistributable permission granted
         new Recipe('Recipe 1', 'This is simply a test', 'https://c1.staticflickr.com/9/8346/8258253775_d8fa9aa697_b.jpg'),
         new Recipe('Recipe 2', 'This is simply a test', 'http://maxpixel.freegreatpicture.com/static/photo/1x/Sweets-Sweet-Indian-Food-Rasgula-Dessert-577230.jpg'),
