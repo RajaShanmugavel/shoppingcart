@@ -12,6 +12,7 @@ export class ShoppingListService {
           return this.ingredients.slice();
       }
 
+      // This is the test comment
       addIngredient(ingredient: Ingredient){
         this.ingredients.push(ingredient);
         this.ingredientsChanged.emit(this.ingredients.slice());
