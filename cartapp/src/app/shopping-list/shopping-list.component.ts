@@ -11,7 +11,7 @@ export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[];
   constructor(private slService: ShoppingListService) { }
 
-  ngOnInit() {
+  ngOnInit() { // Using the SLService to get ingredients and assign to local ingredient array
     this.ingredients = this.slService.getIngredients();
     this.slService.ingredientsChanged
     .subscribe(
