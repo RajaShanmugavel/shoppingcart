@@ -24,6 +24,7 @@ export class ShoppingListService {
         //       this.addIngredient(ingredient);
         //   }
         this.ingredients.push(...ingredients); // This line does the same as above for loop "..." is a spread operator which SPREADS array to single items.
+                                               // Refer https://angular-2-training-book.rangle.io/handout/features/spread_and_rest.html
         this.ingredientsChanged.emit(this.ingredients.slice());
       }
 }
